@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "NavHeader": "/components/NavHeader/NavHeader",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-search": "@vant/weapp/search/index"
+  }
+}

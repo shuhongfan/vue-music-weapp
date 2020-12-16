@@ -1,0 +1,32 @@
+<van-sidebar active-key="{{ activeKey }}">
+    <van-sidebar-item
+            wx:for="{{rankingList}}"
+            wx:key="id"
+            bindtap="onChange"
+            title="{{item.title}}"
+            data-title="{{item.title}}"
+            data-id="{{item.id}}" />
+</van-sidebar>
+<van-notify id="van-notify" />
+<loading  hidden="{{!isloading}}">
+    加载中...
+</loading>
+<van-transition show="{{ !isloading }}" custom-class="block" name="fade-right">
+    <scroll-view wx:if="{{!isloading}}" style="height:{{windowHeight}}px;" class="rankList" enable-flex scroll-y>
+        <view class="swiperItem">
+            <view class="title">{{rankingListData.name}}</view>
+            <view
+                    class="musicItem"
+                    bindtap="toRankListDetail"
+                    data-id="{{musicItem.id}}"
+                    wx:for="{{rankingListData.tracks}}"
+                    wx:key="id"
+                    wx:for-item="musicItem">
+                <image src="{{musicItem.al.picUrl}}"></image>
+                <text class="count">{{index+1}}</text>
+                <text class="musicName">{{musicItem.name}}</text>
+            </view>
+        </view>
+    </scroll-view>
+</van-transition>
+

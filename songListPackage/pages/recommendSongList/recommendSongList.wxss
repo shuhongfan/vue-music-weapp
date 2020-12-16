@@ -1,0 +1,61 @@
+/*轮播*/
+swiper {
+    padding-top: 10px;
+    position: relative;
+}
+swiper-item text{
+    background-color: #fff;
+    border-radius: 30rpx;
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+}
+
+.le-img {
+    width: 100%;
+    display: block;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+    border-radius: 6px;
+}
+.le-img.le-active {
+    transform: scale(1);
+}
+
+/*内容区域*/
+van-grid text{
+    font-size: 26rpx;
+    /* 单行文本溢出隐藏 */
+    /* display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+
+    /* 多行文本溢出 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* 切换盒模型 */
+    display: -webkit-box;
+    /* 设置对齐方式 */
+    -webkit-box-orient: vertical;
+    /* 设置多行行数 */
+    -webkit-line-clamp: 2;
+}
+
+
+.van-image__img{
+    border-radius: 30rpx;
+    position: relative;
+}
+van-icon{
+    position: absolute;
+    left: 70%;
+    top: 20%;
+    z-index: 0;
+}
+.van-info{
+ z-index: 0;
+}

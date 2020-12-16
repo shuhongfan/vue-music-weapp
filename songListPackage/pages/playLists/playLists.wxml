@@ -1,0 +1,53 @@
+<view class="listContainer">
+<!--头部-->
+    <view class="header" style="background: url({{playListDetail.creator.backgroundUrl}})">
+        <van-image class="left" width="10rem" height="10rem" src="{{playListDetail.coverImgUrl}}" />
+        <view class="right">
+            <text class="textH1">{{playListDetail.name}}</text>
+            <view>
+                <van-image round width="2rem" height="2rem" src="{{playListDetail.creator.avatarUrl}}"/>
+                <text>{{playListDetail.creator.nickname}}</text>
+                <van-cell title-width="330rpx" wx:if="{{playListDetail.description}}" title="{{playListDetail.description}}" is-link bind:click="showPopup" />
+                <van-popup
+                        class="infoPopup"
+                        round
+                        border="false"
+                        closeable
+                        position="bottom"
+                        show="{{ show }}"
+                        bind:close="onClose">
+                    <view style="background: url({{playListDetail.creator.backgroundUrl}})">
+                        <van-image class="creatorImg" width="10rem" height="10rem" src="{{playListDetail.coverImgUrl}}" />
+                        {{playListDetail.description}}
+                    </view>
+                </van-popup>
+            </view>
+        </view>
+    </view>
+
+    <!--    列表区域-->
+    <view class="listContainer">
+        <view class="listHeader">
+            <text>播放全部</text>
+            <text class="changeMore">多选</text>
+        </view>
+        <!--        内容区域-->
+        <scroll-view scroll-y class="listScroll">
+            <view
+                    class="scrollItem"
+                    wx:for="{{playListDetail.tracks}}"
+                    wx:key="id"
+                    bindtap="toSongDetail"
+                    data-song="{{item}}"
+                    data-index="{{index}}"
+            >
+                <image src="{{item.al.picUrl}}"></image>
+                <view class="musicInfo">
+                    <text class="musicName">{{item.name}}</text>
+                    <text class="author">{{item.artists[0].name}}</text>
+                </view>
+                <view class="iconfont icon-gengduo"></view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

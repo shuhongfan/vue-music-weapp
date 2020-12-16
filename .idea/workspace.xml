@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5453d27e-bf8c-48c9-97e8-90efc586283d" name="默认的" comment="微信小程序 end" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Wechat mini program component js file" />
+        <option value="Wechat mini program component json file" />
+        <option value="Wechat mini program page js file(Page API)" />
+        <option value="Wechat mini program page json file(Page API)" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="eea15953-9249-4ea2-a8ca-8a79baf5da85" />
+  <component name="ProjectId" id="1jrZ57Cz3ESit6SFMeKsWODrfk3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="新增" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\DEMO\微信小程序\fanyin\otherPackage\pages" />
+      <recent name="F:\DEMO\微信小程序\fanyin\songPackage\pages" />
+      <recent name="F:\DEMO\微信小程序\fanyin\otherPackage" />
+      <recent name="F:\DEMO\微信小程序\fanyin\songPackage" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\DEMO\微信小程序\fanyin" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5453d27e-bf8c-48c9-97e8-90efc586283d" name="默认的" comment="" />
+      <created>1604563987275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604563987275</updated>
+      <workItem from="1604563988325" duration="1263000" />
+      <workItem from="1604565281212" duration="11011000" />
+      <workItem from="1604656181767" duration="80000" />
+      <workItem from="1604656264468" duration="6000" />
+      <workItem from="1604656271792" duration="6940000" />
+      <workItem from="1604728301401" duration="12056000" />
+      <workItem from="1605197821296" duration="136000" />
+      <workItem from="1605197989391" duration="11000" />
+      <workItem from="1605363992635" duration="9093000" />
+      <workItem from="1605416807605" duration="3344000" />
+      <workItem from="1605533877184" duration="7428000" />
+      <workItem from="1605575168576" duration="11000" />
+      <workItem from="1605631175540" duration="1632000" />
+      <workItem from="1605944631108" duration="19058000" />
+      <workItem from="1606052962064" duration="6763000" />
+      <workItem from="1606093940116" duration="165000" />
+      <workItem from="1606094562612" duration="14000" />
+      <workItem from="1606353218198" duration="21000" />
+      <workItem from="1606636704760" duration="9888000" />
+      <workItem from="1607166620585" duration="2239000" />
+      <workItem from="1607319483402" duration="14149000" />
+      <workItem from="1607398250001" duration="19477000" />
+      <workItem from="1607487087559" duration="1242000" />
+      <workItem from="1607492851090" duration="12785000" />
+      <workItem from="1607760939492" duration="6365000" />
+      <workItem from="1607830554651" duration="13797000" />
+      <workItem from="1607917163415" duration="6132000" />
+      <workItem from="1608047395043" duration="137000" />
+      <workItem from="1608047545325" duration="9050000" />
+      <workItem from="1608097588819" duration="5000000" />
+    </task>
+    <task id="LOCAL-00001" summary="2020.11.7 end">
+      <created>1604748811000</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604748811000</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2020.11.16 end">
+      <created>1605459059634</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605459059634</updated>
+    </task>
+    <task id="LOCAL-00003" summary="2020.11.17 end">
+      <created>1605632803338</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605632803338</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2020.11.22 end">
+      <created>1605980206457</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605980206457</updated>
+    </task>
+    <task id="LOCAL-00005" summary="2020.11.22 end">
+      <created>1605980254275</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605980254275</updated>
+    </task>
+    <task id="LOCAL-00006" summary="微信小程序 end">
+      <created>1606064352559</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606064352559</updated>
+    </task>
+    <task id="LOCAL-00007" summary="微信小程序 end">
+      <created>1606065869448</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606065869448</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="2020.11.7 end" />
+    <MESSAGE value="2020.11.16 end" />
+    <MESSAGE value="2020.11.17 end" />
+    <MESSAGE value="2020.11.22 end" />
+    <MESSAGE value="微信小程序 end" />
+    <option name="LAST_COMMIT_MESSAGE" value="微信小程序 end" />
+  </component>
+</project>

@@ -1,0 +1,112 @@
+<!--搜索框-->
+<van-search
+        value="{{ keywords }}"
+        placeholder="请输入 歌曲 歌单 MV 关键词"
+        show-action
+        bind:search="onSearch"
+        bind:change="onSearch"
+        bind:cancel="onCancel"
+/>
+<!--TAB标签页-->
+<van-tabs active="{{ type }}" bind:change="onChange">
+    <van-tab title="歌曲" name="1">
+        <!--    列表区域-->
+        <view class="listContainer">
+            <view class="listHeader">
+                <text>播放全部</text>
+                <text class="changeMore">多选</text>
+            </view>
+            <!--        内容区域-->
+            <scroll-view
+                    style="height:{{windowHeight}}px;"
+                    scroll-y
+                    class="listScroll"
+                    bindscrolltolower="loadScrolltolower">
+                <view
+                        class="scrollItem"
+                        wx:for="{{songs}}"
+                        wx:key="id"
+                        bindtap="toSongDetail"
+                        data-song="{{item}}"
+                        data-index="{{index}}"
+                >
+                    <image src="{{item.artists[0].img1v1Url}}"></image>
+                    <view class="musicInfo">
+                        <text class="musicName">{{item.name}}</text>
+                        <text class="author">{{item.artists[0].name}}</text>
+                    </view>
+                    <view class="iconfont icon-gengduo"></view>
+                </view>
+            </scroll-view>
+        </view>
+    </van-tab>
+    <van-tab title="歌单" name="1000">
+        <!--    列表区域-->
+        <view class="listContainer">
+            <!--        内容区域-->
+            <scroll-view
+                    style="height:{{windowHeight}}px;"
+                    scroll-y
+                    class="listScroll"
+                    bindscrolltolower="loadScrolltolower">
+                <view
+                        class="recentItem"
+                        wx:for="{{playlists}}"
+                        wx:key="id"
+                        data-id="{{item.id}}"
+                        bindtap="goRecommendSong">
+                    <image src="{{item.coverImgUrl}}"></image>
+                    <text>{{item.name}}</text>
+                </view>
+            </scroll-view>
+        </view>
+    </van-tab>
+    <van-tab title="MV" name="1004">
+        <scroll-view
+                style="height:{{windowHeight}}px;"
+                scroll-y
+                class="listScroll"
+                bindscrolltolower="loadScrolltolower">
+            <view class="videoItem" wx:for="{{mvs}}" wx:key="id">
+                <video
+                        wx:if="{{videoID==item.id}}"
+                        class="common"
+                        object-fit="fill"
+                        src="{{mvUrl}}"
+                        poster="{{item.cover}}"
+                        bindplay="handlePlay"
+                        id="{{item.id}}"
+                        bindtimeupdate="handleTimeUpdate"
+                        bindended="handleEnded"
+                ></video>
+                <!--            video 性能优化-->
+                <image
+                        wx:else
+                        bindtap="handlePlay"
+                        id="{{item.id}}"
+                        class="common"
+                        src="{{item.cover}}">
+                    <van-icon name="play-circle-o"  class="infoplay" color="white"/>
+                </image>
+                <view class="content">{{item.name}}</view>
+                <view class="footer">
+                    <image class="avatar" src="{{item.data.creator.avatarUrl}}"></image>
+                    <text class="nickName">{{item.artists.name}}</text>
+                    <view class="comments_praised">
+                        <text class="item">
+                            <text class="iconfont icon-buoumaotubiao15"></text>
+                            <text class="count">{{item.data.praisedCount}}</text>
+                        </text>
+                        <text class="item">
+                            <text class="iconfont icon-pinglun1"></text>
+                            <text class="count">{{item.data.commentCount}}</text>
+                        </text>
+                        <button open-type="share" class="item btn">
+                            <text class="iconfont icon-gengduo"></text>
+                        </button>
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </van-tab>
+</van-tabs>

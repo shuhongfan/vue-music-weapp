@@ -1,0 +1,153 @@
+/*列表区域样式*/
+.listContainer{
+    position: relative;
+    /*top: -20rpx;*/
+    padding: 0 20rpx;
+    border-radius: 30rpx;
+    background-color: #fff;
+}
+.listHeader{
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.listHeader .changeMore{
+    float: right;
+}
+
+
+/*内容区域*/
+.listScroll{
+    /*height: calc(100vh - 380rpx);*/
+}
+.scrollItem{
+    position: relative;
+    display: flex;
+    margin-bottom: 20rpx;
+}
+.scrollItem image{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 8rpx;
+}
+.musicInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+.musicInfo text{
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    /*一行显示 多行隐藏*/
+    max-width: 500rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.scrollItem .iconfont{
+    position: absolute;
+    right: 0;
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: right;
+}
+
+/*最近播放记录*/
+.recentScroll{
+    height: 200rpx;
+}
+.recentItem{
+    float: left;
+    width: 210rpx;
+    height: 250rpx;
+    margin: 10rpx;
+}
+.recentItem image{
+    width: 100%;
+    height: 80%;
+    border-radius: 10rpx;
+}
+.recentItem text{
+    /* 单行文本溢出隐藏 */
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.videoItem{
+    padding: 0 3%;
+}
+.viewScroll video{
+
+}
+.videoItem .common{
+    width: 100%;
+    height: 360rpx;
+    border-radius: 10rpx;
+}
+.videoItem .content {
+    font-size: 26rpx;
+    height:80rpx;
+    line-height: 80rpx;
+    max-width: 500rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.videoItem{
+    position: relative;
+}
+.videoItem .infoplay{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    font-size: 100rpx;
+}
+/* footer */
+.footer {
+    border-top: 1rpx solid #eee;
+    padding: 20rpx 0;
+}
+.footer .avatar {
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.footer  .nickName {
+    font-size: 26rpx;
+    vertical-align: middle;
+    margin-left: 20rpx;
+}
+
+.footer .comments_praised {
+    float: right;
+}
+
+.comments_praised .btn {
+    display: inline;
+    padding: 0;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.comments_praised .btn:after {
+    border: none;
+}
+
+.comments_praised .item {
+    margin-left: 50rpx;
+    position: relative;
+}
+
+.comments_praised .item .count {
+    position: absolute;
+    top: -20rpx;
+    font-size: 20rpx;
+}
+

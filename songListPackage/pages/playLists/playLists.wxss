@@ -1,0 +1,117 @@
+/*头部*/
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+.left .van-image__img{
+    margin: 10rpx;
+    border-radius: 30rpx;
+}
+.right text{
+    font-size: 30rpx;
+    line-height: 30rpx;
+    color: white;
+}
+.right .textH1{
+    display: block;
+    font-size: 40rpx;
+    line-height: 50rpx;
+    padding: 20rpx;
+}
+.right>view{
+    position: relative;
+}
+.right .van-image{
+    margin-left: 30rpx;
+}
+.right view text{
+    display: block;
+    position: absolute;
+    left: 110rpx;
+    top: 20rpx;
+}
+.right .van-cell{
+    background-color: transparent;
+    opacity: 1;
+    border-bottom: none;
+}
+.right .van-cell__title,.right .van-icon{
+    color: white;
+}
+.right .van-cell__title{
+    /* 单行文本溢出隐藏 */
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.right .van-cell:after{
+    display: none;
+}
+
+/*弹出框*/
+.infoPopup view{
+    color: white;
+}
+.infoPopup view .creatorImg{
+    display: block;
+    margin-left: 50%;
+    padding-top: 30rpx;
+    transform: translateX(-50%);
+}
+
+
+/*列表区域样式*/
+.listContainer{
+    position: relative;
+    /*top: -20rpx;*/
+    padding: 0 20rpx;
+    border-radius: 30rpx;
+    background-color: #fff;
+}
+.listHeader{
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.listHeader .changeMore{
+    float: right;
+}
+
+
+/*内容区域*/
+.listScroll{
+    height: calc(100vh - 380rpx);
+}
+.scrollItem{
+    position: relative;
+    display: flex;
+    margin-bottom: 20rpx;
+}
+.scrollItem image{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 8rpx;
+}
+.musicInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+.musicInfo text{
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    /*一行显示 多行隐藏*/
+    max-width: 500rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.scrollItem .iconfont{
+    position: absolute;
+    right: 0;
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: right;
+}

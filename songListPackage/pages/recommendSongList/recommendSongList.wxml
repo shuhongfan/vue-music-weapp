@@ -1,0 +1,36 @@
+<view class="recommendSongListContainer">
+<!--    头部导航-->
+    <van-tabs sticky active="{{ cat }}" bind:change="onChange">
+        <van-tab wx:for="{{cats}}" wx:key="cat" title="{{cats[index]}}">{{cats.index}}</van-tab>
+    </van-tabs>
+<!--    轮播-->
+    <swiper autoplay previous-margin='80px' circular next-margin='80px' bindchange="swiperChange" style='height:{{swiperH}};'>
+        <swiper-item wx:for='{{highqualitySongList}}' wx:key='id' data-id="{{item.id}}" bindtap="goRecommendSong">
+            <image class='le-img {{nowIdx==index?"le-active":""}}' bindload='getHeight' src='{{item.coverImgUrl}}' style='height:{{swiperH}};'></image>
+            <text>{{item.name}}</text>
+        </swiper-item>
+    </swiper>
+<!--    内容区域-->
+    <van-grid column-num="3" border="{{ false }}" gutter="{{ 10 }}">
+        <van-grid-item
+                use-slot
+                wx:for="{{recommendSongList}}"
+                wx:key="id"
+                data-id="{{item.id}}"
+                bind:click="goRecommendSong">
+            <van-image
+                    lazy-load
+                    use-loading-slot
+                    use-error-slot
+                    width="200rpx"
+                    height="200rpx"
+                    src="{{item.coverImgUrl}}"
+            >
+                <van-loading slot="loading" type="spinner" size="20" vertical />
+                <text slot="error">加载失败</text>
+            </van-image>
+            <text>{{item.name + item.description}}</text>
+            <van-icon info="{{item.playCount>10000?(item.playCount/10000|Int)+'万':item.playCount}}" />
+        </van-grid-item>
+    </van-grid>
+</view>
