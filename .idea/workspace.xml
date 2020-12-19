@@ -61,7 +61,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -115,6 +115,7 @@
       <workItem from="1608047545325" duration="9050000" />
       <workItem from="1608097588819" duration="5000000" />
       <workItem from="1608107702586" duration="71000" />
+      <workItem from="1608354821539" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="2020.11.7 end">
       <created>1604748811000</created>
